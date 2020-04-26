@@ -58,5 +58,22 @@ namespace YXHGenerator_Desktop
                 + "我国最近研发出了一款" + itemvar1 + ",它" + looksvar1 + "，" + featuresvar1_1 + "。大家可能会惊讶他能" + featuresvar1_2 + "呢，小编也是非常惊讶呢。"
                 + "这就是关于" + itemvar1 + "的介绍了，如果想了解更多" + realmvar1 + "的事情，欢迎点赞收藏关注哦。";
         }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generate4_Click(object sender, EventArgs e)
+        {
+            String channelvar3;
+            if (string.IsNullOrWhiteSpace(channel3.Text)) { channelvar3 = "营销号爱发明"; } else { channelvar3 = channel3.Text; };//频道名3
+            String itemvar2 = item2.Text;//制作物品
+            String guochengvar2_1 = guocheng2_1.Text;//过程形容词
+            String guochengvar2_2 = guocheng2_2.Text;//过程
+            output4.Text = "\t" + "大家好，我是" + channelvar3 + ",今天我来教大家制作" + itemvar2 + "。"
++ "做" + itemvar2 + "是一个" + guochengvar2_1 + "的过程。" + guochengvar2_2 + "。是不是很" + guochengvar2_1 + "呢？"
++ "好了，今天的节目就到这里，我是" + channelvar3 + "，下期再见。";
+        }
     }
 }
